@@ -69,5 +69,5 @@ jobs:
         with:
           app-name: 'myfunc000'
           slot-name: 'Production'
-          package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E8ACE0689DE449B2A29AE029FC286A49 }}
+          package: release.zip
+          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
