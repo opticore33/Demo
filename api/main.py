@@ -15,4 +15,4 @@ async def add_email(
 
 @app.get("/get_emails")
 async def mail_list():
-    return emails
+    return {"emails": emails}
